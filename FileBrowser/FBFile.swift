@@ -22,7 +22,7 @@ import Foundation
     open let filePath: URL
     // FBFileType
     open let type: FBFileType
-    
+
     open func delete()
     {
         do
@@ -34,7 +34,7 @@ import Foundation
             print("An error occured when trying to delete file:\(self.filePath) Error:\(error)")
         }
     }
-    
+
     /**
      Initialize an FBFile object with a filePath
      
@@ -85,6 +85,8 @@ public enum FBFileType: String {
     case PNG = "png"
     /// ZIP file
     case ZIP = "zip"
+    /// DB file
+    case DB = "sqlite"
     /// Any file
     case Default = "file"
     

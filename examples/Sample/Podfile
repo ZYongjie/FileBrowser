@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'Sample' do
   pod 'FileBrowser', :path => '../..'
+  pod 'FMDB'
 end
